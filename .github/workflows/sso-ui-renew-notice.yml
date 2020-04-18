@@ -57,20 +57,20 @@ jobs:
 #          directory: "."
 #          github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Send mail
-        uses: dawidd6/action-send-mail@v2
-        with:
-          server_address: smtp.mailtrap.io
-          server_port: 2525
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
-          subject: SSO UI Renew Notice
-          # Read file contents as body:
-          body: file://renew-notice.out
-          to: argaghulamahmad@gmail.com
-          from: SSO UI Renew Notice
-          # Optional content type (defaults to text/plain):
-          content_type: text/html
+#      - name: Send mail
+#        uses: dawidd6/action-send-mail@v2
+#        with:
+#          server_address: smtp.mailtrap.io
+#          server_port: 2525
+#          username: ${{secrets.MAIL_USERNAME}}
+#          password: ${{secrets.MAIL_PASSWORD}}
+#          subject: SSO UI Renew Notice
+#          # Read file contents as body:
+#          body: file://renew-notice.out
+#          to: argaghulamahmad@gmail.com
+#          from: SSO UI Renew Notice
+#          # Optional content type (defaults to text/plain):
+#          content_type: text/html
 
       - name: Delete renew-notice out file
         run: |
