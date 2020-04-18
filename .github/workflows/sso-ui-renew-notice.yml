@@ -41,7 +41,6 @@ jobs:
           SSO_PASSWORD: ${{ secrets.SSO_PASSWORD }}
         run: |
           python sso-login.py > renew-notice.out
-          echo  " :: set-env name = RENEW_NOTICE :: $ ( cat renew-notice.out ) "
 
       #      - name: Commit changes
       #        run: |
@@ -77,7 +76,8 @@ jobs:
         uses: techulus/push-github-action@v0.0.2
         env:
           API_KEY: ${{ secrets.PUSH_NOTIFICATION_API_KEY }}
-          MESSAGE: ${{ RENEW_NOTICE }}
+        run:
+          echo  " :: set-env name = MESSAGE :: $ ( cat renew-notice.out ) "
 
       - name: Delete renew-notice out file
         run: |
