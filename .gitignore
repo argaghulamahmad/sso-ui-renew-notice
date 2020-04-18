@@ -67,3 +67,5 @@ chromedriver.exe
 
 *.log
 /.idea/
+
+/NOTES.txt
