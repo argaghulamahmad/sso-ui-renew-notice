@@ -6,7 +6,7 @@ on:
       - master
 
   schedule:
-  - cron: "*/10 * * * *"
+    - cron: "*/10 * * * *"
 
 jobs:
   sso_ui_renew_notice:
@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-         persist-credentials: false
-         fetch-depth: 0
+          persist-credentials: false
+          fetch-depth: 0
 
       - name: Install Google Chrome
         run: |
@@ -52,8 +52,7 @@ jobs:
 
       - name: Run sso login script
         run: |
-          chmod +x ./sso-ui-renew-notice.sh
-          ./sso-ui-renew-notice.sh
+          python3 sso-login.py > renew-notice.out
 
       - name: Commit changes
           run: |
