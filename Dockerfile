@@ -26,4 +26,4 @@ RUN pip install -r requirements.txt
 
 # run bash script
 RUN chmod +x sso-ui-renew-notice.sh
-CMD [ "./sso-ui-renew-notice.sh" ]
+CMD [ "./sso-ui-renew-notice.sh > renew-notice.out" ]
