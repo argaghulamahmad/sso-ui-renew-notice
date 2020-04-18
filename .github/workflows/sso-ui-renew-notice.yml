@@ -6,7 +6,7 @@ on:
       - master
 
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "0 8 * * *"
 
 jobs:
   sso_ui_renew_notice:
