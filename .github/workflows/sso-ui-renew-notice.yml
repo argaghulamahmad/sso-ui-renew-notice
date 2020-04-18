@@ -40,7 +40,7 @@ jobs:
           SSO_USERNAME: ${{ secrets.SSO_USERNAME }}
           SSO_PASSWORD: ${{ secrets.SSO_PASSWORD }}
         run: |
-          python sso-login.py > renew-notice.out
+          python sso-login.py > index.html
           date >> renew-notice.out
 
       - name: Commit changes
