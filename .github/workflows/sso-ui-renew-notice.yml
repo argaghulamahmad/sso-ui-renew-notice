@@ -19,18 +19,18 @@ jobs:
 
       - name: Install Google Chrome
         run: |
-          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
-          sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-          apt-get -y update
-          apt-get install -y google-chrome-stable
+          sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get -y update
+          sudo apt-get install -y google-chrome-stable
 
       - name: Install Chromedriver
         run: |
-          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
-          sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-          apt-get -y update
-          apt-get install -y google-chrome-stable
-          ENV DISPLAY=:99
+          sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get -y update
+          sudo apt-get install -y google-chrome-stable
+          sudo ENV DISPLAY=:99
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v1
