@@ -58,16 +58,16 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send mail
-          uses: dawidd6/action-send-mail@v2
-          with:
-            server_address: smtp.gmail.com
-            server_port: 465
-            username: ${{secrets.MAIL_USERNAME}}
-            password: ${{secrets.MAIL_PASSWORD}}
-            subject: SSO UI Renew Notice
-            # Read file contents as body:
-            body: file://renew-notice.out
-            to: argaghulamahmad@gmail.com
-            from: dev.argaghulamahmad@gmail.com
-            # Optional content type (defaults to text/plain):
-            content_type: text/html
+        uses: dawidd6/action-send-mail@v2
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: SSO UI Renew Notice
+          # Read file contents as body:
+          body: file://renew-notice.out
+          to: argaghulamahmad@gmail.com
+          from: dev.argaghulamahmad@gmail.com
+          # Optional content type (defaults to text/plain):
+          content_type: text/html
