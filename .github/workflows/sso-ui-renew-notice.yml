@@ -60,7 +60,7 @@ jobs:
       - name: Send mail
         uses: dawidd6/action-send-mail@v2
         with:
-          server_address: smtp.gmail.com
+          server_address: smtp.mailtrap.io
           server_port: 465
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
@@ -68,7 +68,7 @@ jobs:
           # Read file contents as body:
           body: file://renew-notice.out
           to: argaghulamahmad@gmail.com
-          from: dev.argaghulamahmad@gmail.com
+          from: SSO UI Renew Notice
           # Optional content type (defaults to text/plain):
           content_type: text/html
 
