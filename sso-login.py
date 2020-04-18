@@ -3,7 +3,8 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 
 env = environ.Env(DEBUG=(bool, False), )
-environ.Env.read_env('.env')
+# environ.Env.read_env('.env')
+environ.Env.read_env()
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--incognito")
