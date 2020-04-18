@@ -51,10 +51,10 @@ jobs:
         run: |
           python sso-login.py > renew-notice.out
 
-#      - name: Commit changes
-#          run: |
-#            git config --local user.email "argaghulamahmad@gmail.com"
-#            git config --local user.name "Arga Ghulam Ahmad"
-#            git add -A
-#
-#            git commit -m "SSO UI Renew Notice"
+      - name: Commit changes
+          run: |
+            git config --local user.email "argaghulamahmad@gmail.com"
+            git config --local user.name "Arga Ghulam Ahmad"
+            git add -A
+
+            git commit -m "SSO UI Renew Notice"
