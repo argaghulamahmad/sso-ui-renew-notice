@@ -16,3 +16,14 @@ RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 # set display port to avoid crash
 ENV DISPLAY=:99
 
+# add script and requirements
+ADD ./sso_ui/sso-login.py /
+ADD requirements.txt /
+ADD sso-ui-renew-notice.sh /
+
+# install requirements
+RUN pip install -r requirements.txt
+
+# run bash script
+RUN chmod +x sso-ui-renew-notice.sh
+CMD [ "./sso-ui-renew-notice.sh" ]
