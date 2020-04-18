@@ -46,8 +46,8 @@ jobs:
 
       - name: Run sso login script
         env:
-          SSO_USERNAME
-          SSO_PASSWORD
+          SSO_USERNAME: ${{ secrets.SSO_USERNAME }}
+          SSO_PASSWORD: ${{ secrets.SSO_PASSWORD }}
         run: |
           python sso-login.py > renew-notice.out
 
