@@ -41,7 +41,7 @@ jobs:
           SSO_PASSWORD: ${{ secrets.SSO_PASSWORD }}
         run: |
           python sso-login.py > renew-notice.out
-          RENEW_NOTICE=$(cat renew-notice.out)
+          echo  " :: set-env name = RENEW_NOTICE :: $ ( cat renew-notice.out ) "
 
       #      - name: Commit changes
       #        run: |
