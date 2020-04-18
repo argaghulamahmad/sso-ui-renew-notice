@@ -42,20 +42,20 @@ jobs:
         run: |
           python sso-login.py > renew-notice.out
 
-      - name: Commit changes
-        run: |
-          git config --local user.email "argaghulamahmad@gmail.com"
-          git config --local user.name "Arga Ghulam Ahmad"
-          git add -A
-
-          git commit -m "SSO UI Renew Notice"
-
-      - name: GitHub Push
-        uses: ad-m/github-push-action@v0.5.0
-        with:
-          force: true
-          directory: "."
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+#      - name: Commit changes
+#        run: |
+#          git config --local user.email "argaghulamahmad@gmail.com"
+#          git config --local user.name "Arga Ghulam Ahmad"
+#          git add -A
+#
+#          git commit -m "SSO UI Renew Notice"
+#
+#      - name: GitHub Push
+#        uses: ad-m/github-push-action@v0.5.0
+#        with:
+#          force: true
+#          directory: "."
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send mail
         uses: dawidd6/action-send-mail@v2
@@ -71,3 +71,7 @@ jobs:
           from: dev.argaghulamahmad@gmail.com
           # Optional content type (defaults to text/plain):
           content_type: text/html
+
+      - name: Delete renew-notice out file
+        run: |
+          rm -rf renew-notice.out
