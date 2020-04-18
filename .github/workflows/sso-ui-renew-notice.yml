@@ -46,7 +46,7 @@ jobs:
 
       - name: Run sso login script
         run: |
-          python3 sso-login.py > renew-notice.out
+          python sso-login.py > renew-notice.out
 
 #      - name: Commit changes
 #          run: |
