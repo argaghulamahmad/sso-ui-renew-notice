@@ -16,7 +16,7 @@ CHANGE_PASSWORD = "https://beranda.ui.ac.id/personal/profile/changepassword"
 
 def process():
     login_sso()
-    beranda_ui()
+    dashboard_ui()
     browser.quit()
 
 
@@ -35,7 +35,7 @@ def login_sso():
         browser.quit()
 
 
-def beranda_ui():
+def dashboard_ui():
     try:
         print("[Info - activity]: Change Pass Beranda UI")
         browser.get(CHANGE_PASSWORD)
