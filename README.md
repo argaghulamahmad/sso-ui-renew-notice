@@ -1,5 +1,7 @@
 # SSO UI Password Renew Notice
 
+![SSO UI Renew Notice](https://github.com/argaghulamahmad/sso-ui-renew-notice/workflows/SSO%20UI%20Renew%20Notice/badge.svg)
+
 Send periodic notifications regarding the expiration date of your Universitas Indonesia account's password to your telegram account.
 
 
