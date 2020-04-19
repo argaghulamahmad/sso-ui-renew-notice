@@ -2,6 +2,20 @@
 
 Send periodic notifications regarding the expiration date of your Indonesian university account password to your telegram account.
 
+
+### Run sso-login script locally
+
+Memasang semua dependensi yang diperlukan untuk menjalankan script
+```
+pip install -r requirements.txt
+```
+
+Menjalankan script sso-login
+```
+python sso-login.py
+```
+
+
 ## Built With
 
 * [Python](https://www.python.org/) - Python programming language
@@ -10,6 +24,7 @@ Send periodic notifications regarding the expiration date of your Indonesian uni
 * [Django Environ](https://github.com/joke2k/django-environ) - Read secrets and env
 * [setup-chromedriver](https://github.com/nanasess/setup-chromedriver) - Github action to setup chrome driver
 * [telegram-action](https://github.com/appleboy/telegram-action) - Github action to send telegram message
+
 
 ## Authors
 
