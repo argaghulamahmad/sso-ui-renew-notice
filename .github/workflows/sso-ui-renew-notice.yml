@@ -45,8 +45,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "`${{ secrets.email }}`"
-          git config --local user.name "`${{ secrets.name }}`"
+          git config --local user.email "${{ secrets.email }}"
+          git config --local user.name "${{ secrets.name }}"
           git add -A
 
           git commit -m "`tail -1 renew-notice.txt`"
