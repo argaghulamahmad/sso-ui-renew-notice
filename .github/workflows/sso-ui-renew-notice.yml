@@ -40,8 +40,8 @@ jobs:
           SSO_USERNAME: ${{ secrets.SSO_USERNAME }}
           SSO_PASSWORD: ${{ secrets.SSO_PASSWORD }}
         run: |
-          date > index.html
-          python sso-login.py >> index.html
+          date > renew-notice.txt
+          python sso-login.py >> renew-notice.txt
 
       - name: Commit changes
         run: |
@@ -49,7 +49,7 @@ jobs:
           git config --local user.name "Arga Ghulam Ahmad"
           git add -A
 
-          git commit -m "`tail -1 index.html`"
+          git commit -m "`tail -1 renew-notice.txt`"
 
       - name: send message using telegram
         uses: appleboy/telegram-action@master
@@ -57,7 +57,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            cat index.html
+            cat renew-notice.txt
 
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
