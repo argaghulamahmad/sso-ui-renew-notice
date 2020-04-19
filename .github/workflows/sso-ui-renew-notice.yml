@@ -51,6 +51,14 @@ jobs:
 
           git commit -m "SSO UI Renew Notice"
 
+      - name: send message with line
+        uses: appleboy/line-action@master
+        with:
+          secret: ${{ secrets.secret }}
+          token: ${{ secrets.token }}
+          room: ${{ secrets.room }}
+          args: line message from GitHub Actions ${{ github.event_name }} event.
+
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
         with:
