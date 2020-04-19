@@ -1,6 +1,6 @@
 # SSO UI Password Renew Notice
 
-Send periodic notifications regarding the expiration date of your Indonesian university account password to your telegram account.
+Send periodic notifications regarding the expiration date of your Universitas Indonesia account's password to your telegram account.
 
 
 ### Run sso-login script locally
