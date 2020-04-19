@@ -40,7 +40,8 @@ jobs:
           SSO_USERNAME: ${{ secrets.SSO_USERNAME }}
           SSO_PASSWORD: ${{ secrets.SSO_PASSWORD }}
         run: |
-          python sso-login.py > index.html
+          date > index.html
+          python sso-login.py >> index.html
 
       - name: Commit changes
         run: |
