@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 
 env = environ.Env(DEBUG=(bool, False), )
+# Disable read env, use this if you want to test the script locally
 # environ.Env.read_env('.env')
 
 chrome_options = webdriver.ChromeOptions()
