@@ -5,12 +5,12 @@ Send periodic notifications regarding the expiration date of your Indonesian uni
 
 ### Run sso-login script locally
 
-Memasang semua dependensi yang diperlukan untuk menjalankan script
+Install everything that needed to run the script
 ```
 pip install -r requirements.txt
 ```
 
-Menjalankan script sso-login
+Run the sso-login script
 ```
 python sso-login.py
 ```
@@ -18,6 +18,7 @@ python sso-login.py
 
 ## Built With
 
+* [Github Actions](https://github.com/features/actions) - Github actions
 * [Python](https://www.python.org/) - Python programming language
 * [Pip](https://pip.pypa.io/en/stable/) - Python dependencies manager
 * [Selenium](https://github.com/SeleniumHQ/selenium) - Selenium
