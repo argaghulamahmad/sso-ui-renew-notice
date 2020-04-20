@@ -5,6 +5,13 @@
 Send periodic (daily) notifications regarding the expiration date of your Universitas Indonesia account's password to your telegram account.
 Built with python, selenium, chromedriver, cron, and github action.
 
+### Why?
+#### Build this bot?
+Prevents University of Indonesia student email accounts from expiring because they forgot to change their password.
+#### Github Action?
+- Github action provide pipeline that free to use without limit as long the repo visiblity is public
+- Can triggered with cron
+
 ### Make it your own
 #### Clone this repo
 
