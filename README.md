@@ -26,8 +26,7 @@ git clone https://github.com/argaghulamahmad/sso-ui-renew-notice.git
 
 #### [Create a new repo on your github account.](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository)
 #### [Create your own telegram bot.](https://core.telegram.org/bots)
-
-#### Enter the following secrets to your github repo secrets
+#### [Enter the following secrets to your github repo secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
 
 ```
 // Your Universitas Indonesia account username and password
