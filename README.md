@@ -7,7 +7,7 @@
 ![Screenshoot at telegram](md-assets/sso-ui-renew-notice-bot-telegram.png)
 
 
-Send periodic (daily) notifications regarding the expiration date of your Universitas Indonesia account's password to your telegram account.
+Send periodic (daily) notifications regarding the expiration date of your Universitas Indonesia account's password to your telegram bot.
 Built with python, selenium, chromedriver, telegram bot api, cron, and github action.
 
 ### Why?
