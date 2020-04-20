@@ -2,12 +2,21 @@
 
 ![SSO UI Renew Notice](https://github.com/argaghulamahmad/sso-ui-renew-notice/workflows/SSO%20UI%20Renew%20Notice/badge.svg)
 
-Send periodic notifications regarding the expiration date of your Universitas Indonesia account's password to your telegram account.
+Send periodic (daily) notifications regarding the expiration date of your Universitas Indonesia account's password to your telegram account.
 
 
 ### Make it your own
 
-Clone this repo, create a new github repo, and enter the following secrets to your github repo secrets
+
+#### Clone this repo
+
+```bash
+git clone https://github.com/argaghulamahmad/sso-ui-renew-notice.git
+```
+
+#### [Create a new repo on your github account.](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository)
+
+#### Enter the following secrets to your github repo secrets
 
 ```
 // Your Universitas Indonesia account username and password
@@ -30,6 +39,17 @@ TELEGRAM_TOKEM
 
 email
 name
+```
+
+#### Push to your own repo
+Remove the current remote origin and add your repo as remote origin
+```
+git remote remove origin
+git remote add origin <your-github-repo>
+```
+Push to your own repo
+```
+git push origin master
 ```
 
 ### Run sso-login script locally
