@@ -1,5 +1,6 @@
 # SSO UI Password Renew Notice
 
+![Screenshoot at telegram](md-assets/sso-ui-renew-notice-bot-telegram.png)
 ![SSO UI Renew Notice](https://github.com/argaghulamahmad/sso-ui-renew-notice/workflows/SSO%20UI%20Renew%20Notice/badge.svg)
 
 Send periodic (daily) notifications regarding the expiration date of your Universitas Indonesia account's password to your telegram account.
@@ -11,6 +12,10 @@ Prevents University of Indonesia student email accounts from expiring because th
 #### Github Action?
 - Github action provide pipeline that free to use without limit as long the repo visiblity is public
 - Can triggered with cron (linux time scheduler)
+#### Learning purpose
+- Learn how to utilize github action
+- Discover interesting github action that develop by community
+- Develop telegram bot
 
 ### Make it your own
 #### Clone this repo
@@ -27,8 +32,8 @@ git clone https://github.com/argaghulamahmad/sso-ui-renew-notice.git
 ```
 // Your Universitas Indonesia account username and password
 
-SSO_USERNAME
-SSO_PASSWORD
+SSO_USERNAME // without @ui.ac.id
+SSO_PASSWORD // your email account's password
 ```
 
 ```
@@ -36,15 +41,15 @@ SSO_PASSWORD
 // For further information, read README of the repo below
 // https://github.com/appleboy/telegram-action
 
-TELEGRAM_TO
-TELEGRAM_TOKEM
+TELEGRAM_TO     // chat id with bot
+TELEGRAM_TOKEM  // telegram api token
 ```
 
 ```
 // Your name and your github email
 
-email
-name
+email           // your github email
+name            // your name
 ```
 
 #### Push to your own repo
