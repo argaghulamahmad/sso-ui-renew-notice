@@ -51,19 +51,6 @@ Push to your own repo
 git push origin master
 ```
 
-### Run sso-login script locally
-
-Install everything that needed to run the script
-```
-pip install -r requirements.txt
-```
-
-Run the sso-login script
-```
-python sso-login.py
-```
-
-
 ## Built With
 
 * [Github Actions](https://github.com/features/actions) - Github actions
@@ -74,6 +61,17 @@ python sso-login.py
 * [setup-chromedriver](https://github.com/nanasess/setup-chromedriver) - Github action to setup chrome driver
 * [telegram-action](https://github.com/appleboy/telegram-action) - Github action to send telegram message
 
+### How-to? Run sso-login script locally
+
+Install everything that needed to run the script
+```
+pip install -r requirements.txt
+```
+
+Run the sso-login script
+```
+python sso-login.py
+```
 
 ## References
 
