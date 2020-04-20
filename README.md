@@ -5,6 +5,33 @@
 Send periodic notifications regarding the expiration date of your Universitas Indonesia account's password to your telegram account.
 
 
+### Make it your own
+
+Clone this repo, create a new github repo, and enter the following secrets to your github repo secrets
+
+```
+// Your Indonesian university account username and password
+
+SSO_USERNAME
+SSO_PASSWORD
+```
+
+```
+// Telegram chat id and your telegram bot token
+// For further information, read README of the repo below
+// https://github.com/appleboy/telegram-action
+
+TELEGRAM_TO
+TELEGRAM_TOKEM
+```
+
+```
+// Your name and your github email
+
+email
+name
+```
+
 ### Run sso-login script locally
 
 Install everything that needed to run the script
