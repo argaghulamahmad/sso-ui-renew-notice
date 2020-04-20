@@ -11,6 +11,8 @@ Send periodic (daily) notifications regarding the expiration date of your Univer
 Built with python, selenium, chromedriver, telegram bot api, cron, and github action.
 
 ### Why?
+#### Telegram?
+The easiest instant messaging app bot to configure
 #### Build this bot?
 Prevents University of Indonesia student email accounts from expiring because they forgot to change their password.
 #### Github Action?
