@@ -76,6 +76,13 @@ python sso-login.py
 * [telegram-action](https://github.com/appleboy/telegram-action) - Github action to send telegram message
 
 
+## References
+
+* https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow
+* https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions
+* https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables
+* https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
+
 ## Authors
 
 * **Arga Ghulam Ahmad** - *Initial work* - [@argaghulamahmad/sso-ui-renew-notice](https://github.com/argaghulamahmad/sso-ui-renew-notice)
