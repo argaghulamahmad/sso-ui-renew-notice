@@ -10,7 +10,7 @@ Send periodic notifications regarding the expiration date of your Universitas In
 Clone this repo, create a new github repo, and enter the following secrets to your github repo secrets
 
 ```
-// Your Indonesian university account username and password
+// Your Universitas Indonesia account username and password
 
 SSO_USERNAME
 SSO_PASSWORD
