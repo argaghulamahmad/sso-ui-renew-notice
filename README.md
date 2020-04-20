@@ -45,7 +45,7 @@ SSO_PASSWORD // your email account's password
 // https://github.com/appleboy/telegram-action
 
 TELEGRAM_TO     // chat id with bot
-TELEGRAM_TOKEM  // telegram api token
+TELEGRAM_TOKEN  // telegram api token
 ```
 
 ```
