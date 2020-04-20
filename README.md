@@ -10,7 +10,7 @@ Built with python, selenium, chromedriver, telegram bot api, cron, and github ac
 Prevents University of Indonesia student email accounts from expiring because they forgot to change their password.
 #### Github Action?
 - Github action provide pipeline that free to use without limit as long the repo visiblity is public
-- Can triggered with cron
+- Can triggered with cron (linux time scheduler)
 
 ### Make it your own
 #### Clone this repo
