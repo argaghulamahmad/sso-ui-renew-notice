@@ -6,8 +6,6 @@ Send periodic (daily) notifications regarding the expiration date of your Univer
 
 
 ### Make it your own
-
-
 #### Clone this repo
 
 ```bash
