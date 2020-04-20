@@ -1,7 +1,11 @@
 # SSO UI Password Renew Notice
 
-![Screenshoot at telegram](md-assets/sso-ui-renew-notice-bot-telegram.png)
+
 ![SSO UI Renew Notice](https://github.com/argaghulamahmad/sso-ui-renew-notice/workflows/SSO%20UI%20Renew%20Notice/badge.svg)
+
+
+![Screenshoot at telegram](md-assets/sso-ui-renew-notice-bot-telegram.png)
+
 
 Send periodic (daily) notifications regarding the expiration date of your Universitas Indonesia account's password to your telegram account.
 Built with python, selenium, chromedriver, telegram bot api, cron, and github action.
