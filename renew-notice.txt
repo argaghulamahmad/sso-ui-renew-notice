@@ -1,8 +1,8 @@
-Thu Aug 20 08:11:33 UTC 2020
+Fri Aug 21 08:18:33 UTC 2020
 [Info - activity]: Login SSO UI
 [Info - activity]: Change Pass Beranda UI
 [Info - activity]: Retrieve Information
 LOGIN SEBAGAI
 Arga Ghulam Ahmad
 MASA PASSWORD
-15 hari lagi
+14 hari lagi
