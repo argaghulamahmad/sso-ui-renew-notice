@@ -40,11 +40,9 @@ jobs:
           SSO_USERNAME: ${{ secrets.SSO_USERNAME }}
           SSO_PASSWORD: ${{ secrets.SSO_PASSWORD }}
         run: |
-          sudo timedatectl set-timezone Etc/GMT+7
           rm renew-notice.txt
           touch renew-notice.txt
           python run.py >> renew-notice.txt
-          date >> renew-notice.txt
 
       - name: Commit changes
         run: |
