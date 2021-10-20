@@ -1,6 +1,3 @@
-pyvirtualdisplay
-environ
-beautifulsoup4
-requests
 selenium
-django-environ
+webdriver-manager
+python-dotenv
