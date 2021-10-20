@@ -16,7 +16,8 @@ class Session:
 
         options = webdriver.ChromeOptions()
         options.add_argument("--incognito")
-        options.headless = False
+        options.add_argument("--disable-dev-shm-usage")
+        options.headless = True
 
         # Getting the chromedriver from cache or download it from internet
         print("Getting ChromeDriver ...")
