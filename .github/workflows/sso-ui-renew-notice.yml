@@ -40,6 +40,8 @@ jobs:
           SSO_USERNAME: ${{ secrets.SSO_USERNAME }}
           SSO_PASSWORD: ${{ secrets.SSO_PASSWORD }}
         run: |
+          rm renew-notice.txt
+          touch renew-notice.txt
           python run.py >> renew-notice.txt
           date >> renew-notice.txt
 
