@@ -20,7 +20,6 @@ class Session:
         options.headless = True
 
         # Getting the chromedriver from cache or download it from internet
-        print("Getting ChromeDriver ...")
         self.browser = webdriver.Chrome(ChromeDriverManager().install(), options=options)
         self.browser.set_window_size(1250, 750)
 
