@@ -41,6 +41,7 @@ jobs:
           SSO_PASSWORD: ${{ secrets.SSO_PASSWORD }}
         run: |
           python run.py >> renew-notice.txt
+          date >> renew-notice.txt
 
       - name: Commit changes
         run: |
